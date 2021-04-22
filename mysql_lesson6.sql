@@ -147,7 +147,7 @@ WHERE
 
 -- Выведим общее количество лайков от мужчин и от женщин
 SELECT 
-	count(amount_likes) AS female_likes 
+	count(id) AS female_likes 
 FROM
 	likes_profile
 WHERE 
@@ -160,7 +160,7 @@ WHERE
 			gender = 'ж');
 
 SELECT 
-	count(amount_likes) AS man_likes 
+	count(id) AS man_likes 
 FROM
 	likes_profile
 WHERE 
