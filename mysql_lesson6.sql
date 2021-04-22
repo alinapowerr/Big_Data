@@ -120,31 +120,31 @@ WHERE
 
 
 -- Выведим общее количество лайков от мужчин и от женщин
-SELECT
-	gender
-	,count(user_id) AS amount
+SELECT 
+	count(amount_likes) AS female_likes 
 FROM
-	profiles
-WHERE user_id IN (
-	SELECT 
-		user_id
-	FROM 
-		profiles
-	WHERE
-		user_id in (
-			SELECT 
-				gl.user_id -- gender_likes
-			FROM (
-				SELECT
-					user_id, amount_likes
-				FROM 
-					likes_profile
-				-- ORDER BY 
-				-- amount_likes
-) gl
-))  
-GROUP BY 
-	gender;
+	likes_profile
+WHERE 
+	user_id IN (
+		SELECT 
+			user_id 
+        FROM 
+			profiles
+		WHERE
+			gender = 'ж');
+
+SELECT 
+	count(amount_likes) AS man_likes 
+FROM
+	likes_profile
+WHERE 
+	user_id IN (
+		SELECT 
+			user_id 
+        FROM 
+			profiles
+		WHERE
+			gender = 'м');
 
 
 
