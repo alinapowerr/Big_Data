@@ -97,6 +97,32 @@ WHERE user_id IN (
 ) kids
 ));
 
+-- Добавление поля 'amount_likes' с количеством лайков была ошибкой :D Можно посчитать просто по id таблицы лайков
+SELECT 
+	count(id) AS 'likes sum' 
+FROM 
+	likes_profile
+WHERE user_id IN (
+	SELECT 
+		user_id
+	FROM 
+		profiles
+	WHERE
+		user_id in (
+			SELECT 
+				kids.user_id
+			FROM (
+				SELECT
+					user_id, birthday
+				FROM 
+					profiles
+				ORDER BY 
+					birthday DESC
+				LIMIT 10
+) kids
+));
+
+
 /* 4. Определить кто больше поставил лайков (всего) - мужчины или женщины? */
 
 SELECT * FROM profiles;
