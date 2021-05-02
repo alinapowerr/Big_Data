@@ -59,3 +59,18 @@ END IF;
 END//
 
 DELIMITER ;
+
+/* Практическое задание по теме “Администрирование MySQL” (эта тема изучается по вашему желанию) */
+/* Создайте двух пользователей которые имеют доступ к базе данных shop. 
+Первому пользователю shop_read должны быть доступны только запросы на чтение данных, 
+второму пользователю shop — любые операции в пределах базы данных shop. */
+
+-- shop_read: доступны только запросы на чтение данных
+CREATE USER 'shop_reader'@'localhost' IDENTIFIED WITH sha256_password BY 'pass';
+GRANT SELECT, SHOW VIEW ON shop.* TO 'shop_reader'@'localhost';
+
+
+-- shop: доступны любые операции в пределах базы данных shop
+CREATE USER 'shop_full'@'localhost' IDENTIFIED WITH sha256_password BY 'pass';
+GRANT ALL ON shop.* TO 'shop_full'@'localhost';
+GRANT GRANT OPTION ON shop.* TO 'shop_full'@'localhost';
