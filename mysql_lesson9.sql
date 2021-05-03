@@ -39,9 +39,31 @@ BEGIN
 	END CASE;
 END //
 
-DELIMITER ;
-
 CALL hello();
+
+DELIMITER //
+
+
+CREATE FUNCTION hello_v2()
+RETURNS TINYTEXT NO SQL
+BEGIN
+	DECLARE hours INT;
+    SET hours = HOUR(NOW());
+    CASE
+		WHEN hours BETWEEN 6 AND 11 THEN
+			RETURN 'Доброе утро';
+		WHEN hours BETWEEN 12 AND 17 THEN
+			RETURN 'Добрый день';
+		WHEN hours BETWEEN 18 AND 23 THEN
+			RETURN 'Добрый вечер';
+		WHEN hours BETWEEN 0 AND 5 THEN
+			RETURN 'Доброй ночи';
+		END CASE;
+	END //
+    
+SELECT NOW(), hello_v2();
+		
+
 
 
 /* 2. В таблице products есть два текстовых поля: name с названием товара и description с его описанием. 
@@ -58,7 +80,6 @@ FOR EACH ROW BEGIN
 END IF;
 END//
 
-DELIMITER ;
 
 /* Практическое задание по теме “Администрирование MySQL” (эта тема изучается по вашему желанию) */
 /* Создайте двух пользователей которые имеют доступ к базе данных shop. 
