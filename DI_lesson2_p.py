@@ -5,10 +5,9 @@ import re
 import json
 
 main_url = 'https://naberezhnye.hh.ru/search/vacancy'
-# page = 1
+
 params = {'text': 'Junior python developer',
           'schedule': 'remote',
-          # 'items_on_page': 50,
           'page': 0}
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36'}
@@ -35,18 +34,22 @@ while response.ok:
             salary_min = None
             salary_max = None
         else:
-            salary_info_rate = salary.getText()
-            salary_rate = re.sub("[^A-Za-z][^А-Яа-я]", "", salary_info_rate)
-            # salary_rate = salary_info_rate[-1:-4]
-            salary_sum = salary.getText().replace(u'\u202f', u'')
-            salaries = salary_sum.split('–')
-            salaries[0] = re.sub(r'[^0-9]', '', salaries[0])
-            salary_min = int(salaries[0])
-            if len(salaries) > 1:
-                salaries[1] = re.sub(r'[^0-9]', '', salaries[1])
+            salary_info = salary.getText().replace(u'\u202f', u'')
+            salaries = re.split(r'\s+', re.sub(r'–', ' ', salary_info).strip())
+            if salaries[0].isdigit():
+                salary_min = int(salaries[0])
+            elif salaries[0] == 'от':
+                salary_min = int(salaries[1])
+            else:
+                salary_min = None
+            if len(salaries) > 1 and salaries[0].isdigit():
+                salary_max = int(salaries[1])
+            elif salaries[0] == 'до':
                 salary_max = int(salaries[1])
             else:
                 salary_max = None
+            salary_info_rate = salary.getText()
+            salary_rate = salaries[-1]
 
         vacancy_data['name'] = name
         vacancy_data['link'] = link
