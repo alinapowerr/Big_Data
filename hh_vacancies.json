@@ -3,7 +3,7 @@
         "name": "Стажер-программист Python",
         "link": "https://naberezhnye.hh.ru/vacancy/49992984?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": 300,
-        "salary_max": "500",
+        "salary_max": 500,
         "salary_rate": "USD"
     },
     {
@@ -12,13 +12,6 @@
         "salary_min": null,
         "salary_max": null,
         "salary_rate": null
-    },
-    {
-        "name": "Strong Junior / Middle+ Python Developer",
-        "link": "https://naberezhnye.hh.ru/vacancy/50517824?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 1000,
-        "salary_max": "4000",
-        "salary_rate": "USD"
     },
     {
         "name": "Junior Python Developer (remote)",
@@ -31,8 +24,15 @@
         "name": "Python-разработчик (Django, DRF)",
         "link": "https://naberezhnye.hh.ru/vacancy/39736489?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": 60000,
-        "salary_max": "150000",
+        "salary_max": 150000,
         "salary_rate": " ру"
+    },
+    {
+        "name": "Strong Junior / Middle+ Python Developer",
+        "link": "https://naberezhnye.hh.ru/vacancy/50517824?from=vacancy_search_list&query=Junior%20python%20developer",
+        "salary_min": 1000,
+        "salary_max": 4000,
+        "salary_rate": "USD"
     },
     {
         "name": "Python-разработчик (Django, DRF) программного кода",
@@ -94,22 +94,29 @@
         "name": "Разработчик (Python, Django) junior/middle, удаленно",
         "link": "https://naberezhnye.hh.ru/vacancy/50372324?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": 150000,
-        "salary_max": "180000",
+        "salary_max": 180000,
         "salary_rate": "ру"
     },
     {
         "name": "Junior Python developer",
         "link": "https://naberezhnye.hh.ru/vacancy/50338314?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": 30000,
-        "salary_max": "70000",
+        "salary_max": 70000,
         "salary_rate": "ру"
     },
     {
         "name": "Junior Python developer",
         "link": "https://naberezhnye.hh.ru/vacancy/50338472?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": 30000,
-        "salary_max": "70000",
+        "salary_max": 70000,
         "salary_rate": "ру"
+    },
+    {
+        "name": "Backend Engineer (Python, Django)",
+        "link": "https://naberezhnye.hh.ru/vacancy/50019510?from=vacancy_search_list&query=Junior%20python%20developer",
+        "salary_min": 3000,
+        "salary_max": 4000,
+        "salary_rate": "USD"
     },
     {
         "name": "Junior Python developer в автоматизированное тестирование",
@@ -117,13 +124,6 @@
         "salary_min": null,
         "salary_max": null,
         "salary_rate": null
-    },
-    {
-        "name": "Backend Engineer (Python, Django)",
-        "link": "https://naberezhnye.hh.ru/vacancy/50019510?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 3000,
-        "salary_max": "4000",
-        "salary_rate": "USD"
     },
     {
         "name": "Python Developer (Middle), офис/удаленно",
@@ -168,13 +168,6 @@
         "salary_rate": null
     },
     {
-        "name": "Разработчик SQL",
-        "link": "https://naberezhnye.hh.ru/vacancy/50515748?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": null,
-        "salary_max": null,
-        "salary_rate": null
-    },
-    {
         "name": "Senior Support Engineer - CloudLinux Specialized Team [Remote]",
         "link": "https://naberezhnye.hh.ru/vacancy/48539183?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": null,
@@ -203,22 +196,8 @@
         "salary_rate": null
     },
     {
-        "name": "Junior/Middle DevOps (Kaspersky Single Management Platform)",
-        "link": "https://naberezhnye.hh.ru/vacancy/50330595?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": null,
-        "salary_max": null,
-        "salary_rate": null
-    },
-    {
         "name": "IT Recruitment Team Lead",
         "link": "https://naberezhnye.hh.ru/vacancy/48983314?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 200000,
-        "salary_max": "450000",
-        "salary_rate": "ру"
-    },
-    {
-        "name": "DevOPS / SRE (Junior)",
-        "link": "https://naberezhnye.hh.ru/vacancy/50335242?from=vacancy_search_list&query=Junior%20python%20developer",
         "salary_min": null,
         "salary_max": null,
         "salary_rate": null
@@ -226,9 +205,9 @@
     {
         "name": "Senior IT Recruiter",
         "link": "https://naberezhnye.hh.ru/vacancy/48983274?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 150000,
-        "salary_max": "350000",
-        "salary_rate": "ру"
+        "salary_min": null,
+        "salary_max": null,
+        "salary_rate": null
     },
     {
         "name": "Инженер данных / DE (удалённо)",
@@ -238,11 +217,32 @@
         "salary_rate": null
     },
     {
+        "name": "Разработчик SQL",
+        "link": "https://naberezhnye.hh.ru/vacancy/50515748?from=vacancy_search_list&query=Junior%20python%20developer",
+        "salary_min": null,
+        "salary_max": null,
+        "salary_rate": null
+    },
+    {
         "name": "Младший менеджер проектного офиса",
         "link": "https://naberezhnye.hh.ru/vacancy/50114590?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 90000,
-        "salary_max": "100000",
-        "salary_rate": " ру"
+        "salary_min": null,
+        "salary_max": null,
+        "salary_rate": null
+    },
+    {
+        "name": "Junior/Middle DevOps (Kaspersky Single Management Platform)",
+        "link": "https://naberezhnye.hh.ru/vacancy/50330595?from=vacancy_search_list&query=Junior%20python%20developer",
+        "salary_min": null,
+        "salary_max": null,
+        "salary_rate": null
+    },
+    {
+        "name": "DevOPS / SRE (Junior)",
+        "link": "https://naberezhnye.hh.ru/vacancy/50335242?from=vacancy_search_list&query=Junior%20python%20developer",
+        "salary_min": null,
+        "salary_max": null,
+        "salary_rate": null
     },
     {
         "name": "Менеджер проектного офиса",
@@ -254,9 +254,9 @@
     {
         "name": "Разработчик BI / BI аналитик Junior",
         "link": "https://naberezhnye.hh.ru/vacancy/50469181?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 86250,
+        "salary_min": null,
         "salary_max": null,
-        "salary_rate": "д ру"
+        "salary_rate": null
     },
     {
         "name": "Senior Data scientist",
@@ -268,16 +268,16 @@
     {
         "name": "Разработчик BI / BI аналитик Junior",
         "link": "https://naberezhnye.hh.ru/vacancy/50469172?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 86250,
+        "salary_min": null,
         "salary_max": null,
-        "salary_rate": "д ру"
+        "salary_rate": null
     },
     {
         "name": "DevOps инженер",
         "link": "https://naberezhnye.hh.ru/vacancy/49512911?from=vacancy_search_list&query=Junior%20python%20developer",
-        "salary_min": 120000,
+        "salary_min": null,
         "salary_max": null,
-        "salary_rate": "дру"
+        "salary_rate": null
     },
     {
         "name": "Старший аналитик данных",

@@ -44,7 +44,7 @@ while response.ok:
             salary_min = int(salaries[0])
             if len(salaries) > 1:
                 salaries[1] = re.sub(r'[^0-9]', '', salaries[1])
-                salary_max = salaries[1]
+                salary_max = int(salaries[1])
             else:
                 salary_max = None
 
